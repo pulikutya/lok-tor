@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bejelentkezés</title>
+</head>
+<body>
+    <header></header>
+    <main>
+    <form method="post" action="küldés/">
+        {% csrf_token %}
+        <input type="text" name="felhasználónév" title="felhasználónév">
+        <input type="text" name="jelszó">
+        <input type="submit">
+    </form>
+</main>
+    
+    <footer></footer>
+</body>
+</html>
